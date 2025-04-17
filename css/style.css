@@ -75,14 +75,44 @@ nav a:hover {
 }
 
 /* -------------------------------
-   Sidebar
+   Sidebar Styling
 --------------------------------- */
 .sidebar {
   width: 200px;
-  background-color: #f1f1f1;
-  padding: 1rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
 }
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #0077cc;
+}
+
 
 /* -------------------------------
    Main Content Area
@@ -111,4 +141,32 @@ footer a {
 
 footer a:hover {
   color: #005999;
+}
+
+/* -------------------------------
+   Section Styling
+--------------------------------- */
+section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+section ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
 }
