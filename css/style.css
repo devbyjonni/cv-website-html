@@ -1,116 +1,127 @@
+:root {
+    --color-bg-light: #ffffff;
+    --color-bg-dark: #1e1e1e;
+    --color-text: #333;
+    --color-muted: #666;
+    --color-border: #ddd;
+    --color-primary: #0077cc;
+    --color-primary-hover: #005999;
+    --color-link-light: #80cfff;
+}
+
 /* -------------------------------
    Global Reset & Base Styles
 --------------------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 1rem;
 }
 
 /* -------------------------------
    Header Section
 --------------------------------- */
 header {
-  text-align: center;
-  padding: 2rem 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
 header img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 header p {
-  color: #666;
+    color: #666;
 }
 
 /* -------------------------------
    Navigation
 --------------------------------- */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 1rem;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 nav a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
 }
 
 nav a:hover {
-  color: #005999;
+    color: #005999;
 }
 
 /* -------------------------------
    Layout Container
 --------------------------------- */
 .container {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 /* -------------------------------
    Sidebar Styling
 --------------------------------- */
 .sidebar {
-  width: 200px;
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  font-size: 0.95rem;
+    width: 200px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
 }
 
 .sidebar h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #0077cc;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #0077cc;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
 }
 
 .sidebar ul {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .sidebar ul li {
-  margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .sidebar ul li a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.2s ease;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .sidebar ul li a:hover {
-  color: #0077cc;
+    color: var(--color-primary-hover);
 }
 
 
@@ -118,55 +129,144 @@ nav a:hover {
    Main Content Area
 --------------------------------- */
 .main-content {
-  flex: 1;
+    flex: 1;
 }
 
 /* -------------------------------
    Footer Section
 --------------------------------- */
 footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  margin-top: 3rem;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  color: #888;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #888;
 }
 
 footer a {
-  color: #0077cc;
-  text-decoration: none;
-  margin: 0 0.5rem;
+    color: #0077cc;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
 
 footer a:hover {
-  color: #005999;
+    color: #005999;
+}
+
+footer i {
+    margin-right: 0.5rem;
 }
 
 /* -------------------------------
    Section Styling
 --------------------------------- */
 section {
-  background-color: #ffffff;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #0077cc;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0077cc;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
 }
 
 section ul {
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 section ul li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* -------------------------------
+   Responsive Layout
+--------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0 1rem 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem 0;
+    }
+}
+
+/* -------------------------------
+   Dark Mode (Respects Device Setting)
+--------------------------------- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+    }
+
+    header {
+        background-color: #2a2a2a;
+        border-bottom: 1px solid #444;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid #444;
+    }
+
+    nav a {
+        color: #80cfff;
+    }
+
+    nav a:hover {
+        color: #5bb6e6;
+    }
+
+    .sidebar {
+        background-color: #2a2a2a;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+        background-color: #2a2a2a;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+
+        border-top: 1px solid #444;
+        color: #aaa;
+    }
+
+    footer a {
+        color: #80cfff;
+    }
+
+    footer a:hover {
+        color: #5bb6e6;
+    }
 }
