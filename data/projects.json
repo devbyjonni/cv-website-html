@@ -1,0 +1,14 @@
+[
+  {
+    "title": "CV Website",
+    "description": "Modular and responsive personal website built with HTML, CSS, and JavaScript.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "https://cv-website-html-production.up.railway.app"
+  },
+  {
+    "title": "MyBankApp",
+    "description": "A SwiftUI finance management app with CoreData.",
+    "tech": ["SwiftUI", "CoreData"],
+    "link": "https://github.com/devbyjonni/mybankapp"
+  }
+]
